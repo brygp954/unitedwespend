@@ -357,8 +357,9 @@ function ImpactReveal({ business, streak, onOptIn, onSkip, optedIn }) {
     <div style={{
       position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
       background: "rgba(27,58,45,0.97)", zIndex: 999,
-      display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
+      display: "flex", flexDirection: "column", alignItems: "center",
       padding: "24px",
+      overflowY: "auto",
       animation: "fadeIn 0.3s ease",
     }}>
       <style>{`
