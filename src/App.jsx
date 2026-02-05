@@ -804,16 +804,16 @@ export default function UnitedWeSpend() {
                 The system isn't broken. It's working exactly the way it was designed to. Just not for you.
               </p>
               <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "15px", color: "#C8D8C8", lineHeight: 1.7, margin: "0 0 16px 0" }}>
-                Seventy-three cents of every dollar you spend leaves your community. Gone to the same handful of corporations that have been taking from your town for decades.
+                Seventy-three cents of every dollar you spend leaves your community, gone to the same handful of corporations that have been taking from your town for decades.
               </p>
               <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "15px", color: "#C8D8C8", lineHeight: 1.7, margin: "0 0 16px 0" }}>
-                Both parties told you they'd fix it while the same companies funded both of them.
+                Both parties told you they'd fix it while taking money from those corporations.
               </p>
               <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "15px", color: "#C8D8C8", lineHeight: 1.7, margin: "0 0 16px 0" }}>
                 We're done waiting on Washington.
               </p>
               <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "15px", color: "#C8D8C8", lineHeight: 1.7, margin: "0 0 20px 0" }}>
-                You don't need a law. You don't need a movement. You just need to walk into a different store. When you shift even 10% of your spending to a union shop or a locally owned business, that money stays in your community instead of going to a bonus in a boardroom. That's how the American economy was built. That's how we rebuild it.
+                You don't need a law. You don't need a movement. You just need to walk into a different store. When you shift even 10% of your spending to union shops or locally owned businesses, that money stays in your community instead of going to a bonus in a boardroom. That's how the American economy was built. That's how we rebuild it.
               </p>
               <div style={{
                 borderTop: "1px solid rgba(168,191,168,0.3)", paddingTop: "16px",
