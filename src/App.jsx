@@ -956,7 +956,7 @@ export default function UnitedWeSpend() {
               ))}
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "16px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "12px", padding: "0 4px" }}>
               {[
                 { number: "$0.73", label: "Of every dollar\nleaves your community" },
                 { number: "6x", label: "Local spending\nrecirculates 6x more" },
