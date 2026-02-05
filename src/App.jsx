@@ -369,22 +369,7 @@ function ImpactReveal({ business, streak, onOptIn, onSkip, optedIn }) {
       `}</style>
 
       <div style={{ maxWidth: "420px", width: "100%", textAlign: "center" }}>
-        {/* Streak badge */}
-        {streak > 0 && (
-          <div style={{
-            display: "inline-flex", alignItems: "center", gap: "8px",
-            background: "rgba(196,54,42,0.15)", border: "1px solid rgba(196,54,42,0.3)",
-            padding: "8px 20px", marginBottom: "32px",
-            animation: "streakGlow 2s ease 0.5s",
-          }}>
-            <span style={{ fontSize: "18px" }}>🔥</span>
-            <span style={{
-              fontFamily: "'Libre Franklin', sans-serif", fontSize: "13px",
-              fontWeight: 700, color: "#C4362A", textTransform: "uppercase",
-              letterSpacing: "0.06em",
-            }}>Week {streak} streak</span>
-          </div>
-        )}
+       
 
         {/* Your commitment */}
         <div style={{ animation: "revealUp 0.5s ease", marginBottom: "12px" }}>
