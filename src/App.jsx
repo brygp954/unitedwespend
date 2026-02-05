@@ -478,12 +478,13 @@ function ImpactReveal({ business, streak, onOptIn, onSkip, optedIn }) {
               >Join</button>
             </div>
             <button onClick={onSkip} style={{
-              background: "none", border: "none", cursor: "pointer",
-              fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "13px",
-              color: "rgba(255,255,255,0.35)", marginTop: "16px", padding: "8px",
-            }}>
-              Skip for now
-            </button>
+  background: "none", border: "1px solid rgba(255,255,255,0.3)", cursor: "pointer",
+  fontFamily: "'Libre Franklin', sans-serif", fontSize: "14px", fontWeight: 600,
+  color: "rgba(255,255,255,0.7)", marginTop: "20px", padding: "12px 24px",
+  textTransform: "uppercase", letterSpacing: "0.05em",
+}}>
+  Skip for now
+</button>
             <div style={{
               fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "11px",
               color: "rgba(255,255,255,0.2)", marginTop: "8px", lineHeight: 1.5,
