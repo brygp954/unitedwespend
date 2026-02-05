@@ -658,8 +658,7 @@ export default function UnitedWeSpend() {
       }
       const optData = localStorage.getItem("uws-opted-in");
       if (optData) setOptedIn(JSON.parse(optData));
-      const commitData = localStorage.getItem("uws-commitments");
-      if (commitData) setCommitments(JSON.parse(commitData));
+      
     } catch (e) { /* first visit */ }
   }, []);
 
@@ -690,10 +689,7 @@ export default function UnitedWeSpend() {
       setStreak(streakCount);
 
       // Persist
-      try {
-        localStorage.setItem("uws-commitments", JSON.stringify(newCommitments));
-        localStorage.setItem("uws-streak", JSON.stringify({ count: streakCount, lastWeek: currentWeek }));
-      } catch (e) {}
+    
 
       setImpactReveal(business);
     }
