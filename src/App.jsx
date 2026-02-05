@@ -316,7 +316,7 @@ function ImpactReveal({ business, streak, onOptIn, onSkip, optedIn }) {
   const [submitted, setSubmitted] = useState(false);
   const tierStyle = TIER_STYLES[business.tier];
   const stats = getCommunityStats(business.category);
-  const spotlight = getWeeklySpotlight();
+ 
 
   useEffect(() => {
     // Animate count up
@@ -661,26 +661,19 @@ export default function UnitedWeSpend() {
   useEffect(() => {
     setTimeout(() => setHeroVisible(true), 100);
     // Load streak from storage
-    (async () => {
-      try {
-        const streakData = await window.storage.get("uws-streak");
-        if (streakData) {
-          const parsed = JSON.parse(streakData.value);
-          // If they committed last week or this week, maintain streak
-          if (parsed.lastWeek >= currentWeek - 1) {
-            setStreak(parsed.count);
-          }
+    try {
+      const streakData = localStorage.getItem("uws-streak");
+      if (streakData) {
+        const parsed = JSON.parse(streakData);
+        if (parsed.lastWeek >= currentWeek - 1) {
+          setStreak(parsed.count);
         }
-      } catch (e) { /* first visit */ }
-      try {
-        const optData = await window.storage.get("uws-opted-in");
-        if (optData) setOptedIn(JSON.parse(optData.value));
-      } catch (e) {}
-      try {
-        const commitData = await window.storage.get("uws-commitments");
-        if (commitData) setCommitments(JSON.parse(commitData.value));
-      } catch (e) {}
-    })();
+      }
+      const optData = localStorage.getItem("uws-opted-in");
+      if (optData) setOptedIn(JSON.parse(optData));
+      const commitData = localStorage.getItem("uws-commitments");
+      if (commitData) setCommitments(JSON.parse(commitData));
+    } catch (e) { /* first visit */ }
   }, []);
 
   const handleSearch = () => {
@@ -710,12 +703,10 @@ export default function UnitedWeSpend() {
       setStreak(streakCount);
 
       // Persist
-      (async () => {
-        try {
-          await window.storage.set("uws-commitments", JSON.stringify(newCommitments));
-          await window.storage.set("uws-streak", JSON.stringify({ count: streakCount, lastWeek: currentWeek }));
-        } catch (e) {}
-      })();
+      try {
+        localStorage.setItem("uws-commitments", JSON.stringify(newCommitments));
+        localStorage.setItem("uws-streak", JSON.stringify({ count: streakCount, lastWeek: currentWeek }));
+      } catch (e) {}
 
       setImpactReveal(business);
     }
@@ -723,12 +714,10 @@ export default function UnitedWeSpend() {
 
   const handleOptIn = (contact) => {
     setOptedIn(true);
-    (async () => {
-      try {
-        await window.storage.set("uws-opted-in", JSON.stringify(true));
-        await window.storage.set("uws-contact", JSON.stringify({ contact, timestamp: Date.now() }));
-      } catch (e) {}
-    })();
+    try {
+      localStorage.setItem("uws-opted-in", JSON.stringify(true));
+      localStorage.setItem("uws-contact", JSON.stringify({ contact, timestamp: Date.now() }));
+    } catch (e) {}
   };
 
   const handleImpactDone = () => {
