@@ -670,7 +670,14 @@ export default function UnitedWeSpend() {
     ["Coffee", "Groceries", "Hardware", "Banking"],
     ["Pharmacy", "Wellness", "Fitness", "CBD/Cannabis"],
   ];
-  const handleQuickSearch = (term) => { setQuery(term); setResults(matchBusinesses(term)); setSearched(true); };
+  const handleQuickSearch = (term) => { 
+  setQuery(term); 
+  setResults(matchBusinesses(term)); 
+  setSearched(true);
+  setTimeout(() => {
+    window.scrollTo({ top: window.innerHeight * 0.8, behavior: 'smooth' });
+  }, 100);
+};
 
   const commitCount = Object.keys(commitments).length;
 
