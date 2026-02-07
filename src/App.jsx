@@ -118,12 +118,8 @@ function ShareCard({ business, userName, onClose }) {
   const shareMessage = getRandomMessage(SHARE_MESSAGES)(userName);
 
   const handleShare = () => {
-    const text = `${shareMessage} By choosing ${business.name}. It's your money. It matters. #UnitedWeSpend`;
-    if (navigator.share) {
-      navigator.share({ text }).then(() => onClose(true)).catch(() => onClose(true));
-    } else {
-      navigator.clipboard.writeText(text).then(() => onClose(true)).catch(() => onClose(true));
-    }
+    // For demo, just advance to next screen
+    onClose(true);
   };
 
   return (
