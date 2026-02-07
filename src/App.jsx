@@ -479,7 +479,7 @@ function OptInScreen({ onSubmit, onSkip, optedIn, didShare }) {
               fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "16px",
               color: "#C8D8C8", lineHeight: 1.7, marginBottom: "16px",
             }}>
-              You totally nailed the important part. Every dollar you shift is a dollar that pays a local worker, stays in your neighborhood, builds something here instead of disappearing into a corporate balance sheet.
+              You totally nailed the important part.
             </div>
             
             <div style={{
