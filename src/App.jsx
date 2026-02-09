@@ -218,7 +218,7 @@ function ShareCard({ business, userName, onClose }) {
               fontSize: "14px", fontWeight: 700, color: "#FFFFFF",
               letterSpacing: "0.02em",
             }}>
-              It's your money. It matters.
+              Your money has power. Take it back.
             </div>
             <div style={{
               fontFamily: "'Libre Franklin', sans-serif",
@@ -755,7 +755,7 @@ function FAQAccordion({ onRequestBusiness }) {
   const faqs = [
     { q: "How does this work?", a: "Search for what you need. See options ranked by how much your dollar does for your community. Tap \"I'm Shopping Here\" to commit and share." },
     { q: "Does this actually do anything?", a: "Yes. Every dollar you shift stays local instead of leaving. Do it enough, the numbers change." },
-    { q: "Is this woke? It seems woke.", a: "No. It's economics. It's about shifting our spending and creating a healthy balance so some of the money we earn and spend stays in our community." },
+    { q: "Is this woke? It seems woke.", a: "🙄 No. It's economics. It's about shifting our spending and creating a healthy balance so some of the money we earn and spend stays in our community." },
     { q: "What's the catch?", a: "No catch. 73 cents of every dollar is a problem worth solving. We can't change that but you can. And you and your community will benefit from it." },
     { q: "What if I can't find what I need?", a: "request" },
   ];
@@ -1230,14 +1230,14 @@ export default function UnitedWeSpend() {
             fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 6vw, 44px)",
             fontWeight: 900, color: "#FFFFFF", lineHeight: 1.15, margin: "0 0 20px 0", letterSpacing: "-0.02em",
           }}>
-            It's your money. <span style={{ color: "#C4362A" }}>It matters.</span>
+            Your money has power.<br /><span style={{ color: "#C4362A" }}>Take it back.</span>
           </h1>
 
           <p style={{
             fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "17px", color: "#C8D8C8",
             lineHeight: 1.6, margin: "0 0 12px 0", maxWidth: "500px", marginLeft: "auto", marginRight: "auto",
           }}>
-            73 cents of every dollar leaves town. That's dumb. Fix it.
+            73 cents of every dollar leaves town. That's dumb. Let's fix it.
           </p>
 
           <button
@@ -1250,7 +1250,7 @@ export default function UnitedWeSpend() {
               borderBottom: "1px solid rgba(168,191,168,0.3)",
             }}
           >
-            {showManifesto ? "Close" : "Why this is important"}
+            {showManifesto ? "Close" : "👀 Wait, where does my money go?"}
           </button>
 
           {showManifesto && (
@@ -1261,16 +1261,13 @@ export default function UnitedWeSpend() {
             }}>
               <style>{`@keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }`}</style>
               <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "16px", color: "#E8E2D6", lineHeight: 1.7, margin: "0 0 16px 0", fontStyle: "italic" }}>
-                Money that leaves shrinks your tax base.
+                Where does your money go? Yachts. Diamond shoes. A bunker in New Zealand. Hidden offshore accounts. But wait, it gets worse.
               </p>
               <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "15px", color: "#C8D8C8", lineHeight: 1.7, margin: "0 0 16px 0" }}>
-                Your community has to borrow from the state. The state has to borrow from the federal government. Each step of the way increases your taxes.
-              </p>
-              <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "15px", color: "#C8D8C8", lineHeight: 1.7, margin: "0 0 16px 0" }}>
-                That's a problem. That's when some politicians start tacking on additional funding for their pet projects and donors.
+                When it leaves, your tax base shrinks. Your city still needs funding, so it borrows from the state. The state borrows from the feds. Each layer adds cost, overhead, and someone's pet project.
               </p>
               <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "15px", color: "#C8D8C8", lineHeight: 1.7, margin: "0 0 20px 0" }}>
-                Keep more money local, and you break that cycle. Schools get funded. Roads get fixed. Property values hold. Without the grift.
+                You pay a lot more. You get a lot less.
               </p>
               <div style={{
                 borderTop: "1px solid rgba(168,191,168,0.3)", paddingTop: "16px",
@@ -1278,7 +1275,7 @@ export default function UnitedWeSpend() {
                 fontWeight: 700, color: "#FFFFFF", textAlign: "center",
                 letterSpacing: "0.02em", lineHeight: 1.6,
               }}>
-                It's your money. It matters.
+                Keep more of it here. Skip the grift.
               </div>
             </div>
           )}
@@ -1344,7 +1341,7 @@ export default function UnitedWeSpend() {
                 Every purchase is a shift from the billionaire economy to yours.
               </p>
               <p style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: "12px", color: "#8B7D6B", margin: 0, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em" }}>
-                It's your money. It matters.
+                Your money has power. Take it back.
               </p>
             </div>
           </>
@@ -1401,7 +1398,7 @@ export default function UnitedWeSpend() {
           fontWeight: 700, color: "#FFFFFF", textTransform: "uppercase",
           letterSpacing: "0.06em", marginBottom: "12px", lineHeight: 1.6,
         }}>
-          It's your money. It matters.
+          Your money has power. Take it back.
         </div>
         <div style={{ height: "1px", background: "rgba(168,191,168,0.2)", maxWidth: "200px", margin: "0 auto 12px" }} />
         <p style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: "11px", color: "#A8BFA8", margin: "0", letterSpacing: "0.05em" }}>
