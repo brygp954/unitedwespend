@@ -755,7 +755,7 @@ function FAQAccordion({ onRequestBusiness }) {
   const faqs = [
     { q: "How does this work?", a: "Search for what you need. See options ranked by how much your dollar does for your community. Tap \"I'm Shopping Here\" to commit and share." },
     { q: "Does this actually do anything?", a: "Yes. Every dollar you shift stays local instead of leaving. Do it enough, the numbers change." },
-    { q: "Is this woke? It seems woke.", a: "🙄 No. It's economics. It's about shifting our spending and creating a healthy balance so some of the money we earn and spend stays in our community." },
+    { q: "Is this political?", a: "No. It's economics. This isn't about who you vote for, it's about where your money goes. And you get to decide that right here and right now." },
     { q: "What's the catch?", a: "No catch. 73 cents of every dollar is a problem worth solving. We can't change that but you can. And you and your community will benefit from it." },
     { q: "What if I can't find what I need?", a: "request" },
   ];
@@ -1261,10 +1261,13 @@ export default function UnitedWeSpend() {
             }}>
               <style>{`@keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }`}</style>
               <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "16px", color: "#E8E2D6", lineHeight: 1.7, margin: "0 0 16px 0", fontStyle: "italic" }}>
-                Where does your money go? Yachts. Diamond shoes. A bunker in New Zealand. Hidden offshore accounts. But wait, it gets worse.
+                Where does your money go? Yachts. Diamond shoes. A bunker in New Zealand. Hidden offshore accounts. Stock buybacks.
               </p>
               <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "15px", color: "#C8D8C8", lineHeight: 1.7, margin: "0 0 16px 0" }}>
-                When it leaves, your tax base shrinks. Your city still needs funding, so it borrows from the state. The state borrows from the feds. Each layer adds cost, overhead, and someone's pet project.
+                🤫 And they don't pay taxes on it. You do.
+              </p>
+              <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "15px", color: "#C8D8C8", lineHeight: 1.7, margin: "0 0 16px 0" }}>
+                Your tax base shrinks. Your city still needs funding, so it borrows from the state. The state borrows from the feds. Each layer adds cost, overhead, and someone's pet project.
               </p>
               <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "15px", color: "#C8D8C8", lineHeight: 1.7, margin: "0 0 20px 0" }}>
                 You pay a lot more. You get a lot less.
