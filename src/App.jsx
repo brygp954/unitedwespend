@@ -218,7 +218,7 @@ function ShareCard({ business, userName, onClose }) {
               fontSize: "14px", fontWeight: 700, color: "#FFFFFF",
               letterSpacing: "0.02em",
             }}>
-              Your money has power. Take it back.
+              Your money has power. Use it.
             </div>
             <div style={{
               fontFamily: "'Libre Franklin', sans-serif",
@@ -1230,7 +1230,7 @@ export default function UnitedWeSpend() {
             fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 6vw, 44px)",
             fontWeight: 900, color: "#FFFFFF", lineHeight: 1.15, margin: "0 0 20px 0", letterSpacing: "-0.02em",
           }}>
-            Your money has power.<br /><span style={{ color: "#C4362A" }}>Take it back.</span>
+            Your money has power.<br /><span style={{ color: "#C4362A" }}>Use it.</span>
           </h1>
 
           <p style={{
@@ -1344,7 +1344,7 @@ export default function UnitedWeSpend() {
                 Every purchase is a shift from the billionaire economy to yours.
               </p>
               <p style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: "12px", color: "#8B7D6B", margin: 0, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em" }}>
-                Your money has power. Take it back.
+                Your money has power. Use it.
               </p>
             </div>
           </>
@@ -1401,7 +1401,7 @@ export default function UnitedWeSpend() {
           fontWeight: 700, color: "#FFFFFF", textTransform: "uppercase",
           letterSpacing: "0.06em", marginBottom: "12px", lineHeight: 1.6,
         }}>
-          Your money has power. Take it back.
+          Your money has power. Use it.
         </div>
         <div style={{ height: "1px", background: "rgba(168,191,168,0.2)", maxWidth: "200px", margin: "0 auto 12px" }} />
         <p style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: "11px", color: "#A8BFA8", margin: "0", letterSpacing: "0.05em" }}>
